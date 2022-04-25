@@ -1,0 +1,425 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@100&display=swap");
+
+/* GENERAL STYLES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 14px;
+  background-color: hsl(218, 28%, 13%);
+  color: hsl(0, 0%, 80%);
+  font-family: "Open Sans";
+}
+
+a {
+  text-decoration: none;
+}
+
+h2,
+h3,
+h4 {
+  font-family: Raleway;
+  color: hsl(0, 0%, 100%);
+}
+
+h2 {
+  font-weight: 700;
+}
+
+h3,
+h4 {
+  font-weight: 700;
+  font-size: 14;
+}
+
+/* NAVBAR */
+nav img {
+  width: 3.5rem;
+  height: 15px;
+}
+
+nav {
+  background-color: hsl(217, 28%, 15%);
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  position: sticky;
+  font-weight: 700;
+  font-family: Raleway;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  list-style: none;
+  margin: 0px 10px;
+}
+
+nav ul li a {
+  color: hsl(0, 0%, 70%);
+}
+
+/* HEADER STYLES */
+#header {
+  width: 90%;
+  height: 100;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+#header h2,
+#header p {
+  text-align: center;
+  margin: 20px 0px;
+}
+
+#header button {
+  padding: 10px;
+  border: none;
+  border-radius: 30px;
+  width: 50%;
+  align-self: center;
+  background-color: hsl(198, 60%, 50%);
+  font-family: Raleway;
+  font-weight: 600;
+  color: hsl(0, 0%, 100%);
+}
+
+#header img {
+  margin-bottom: 20px;
+  align-self: center;
+}
+
+/* FEATURES 1 STYLE */
+#feature1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.inFeature1 {
+  display: flex;
+  flex-direction: column;
+  margin: 60px 0px;
+}
+
+.inFeatureImg {
+  width: 60px;
+  height: 60px;
+  align-self: center;
+  margin-bottom: 20px;
+}
+
+.inFeature1 > h3,
+.inFeature1 > p {
+  text-align: center;
+  margin-bottom: 10px;
+  padding: 0px 20px;
+}
+
+/* FEATURES 2 STYLES */
+#features2 {
+  width: 90%;
+  height: 100;
+  margin: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+}
+
+#features2 h2,
+#features2 p {
+  margin-bottom: 15px;
+}
+
+#features2 a {
+  color: hsl(176, 68%, 64%);
+  text-decoration: underline;
+}
+
+/* TESTIMONIAL AND COMMENT STYLES */
+#comments {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+#comments > img {
+  padding-left: 20px;
+}
+
+.comment-box {
+  background-color: hsl(219, 30%, 18%);
+  margin-bottom: 20px;
+  align-self: center;
+  padding: 25px;
+  width: 80%;
+}
+
+.comment-box > p {
+  margin-bottom: 20px;
+}
+
+#profImg {
+  border: none;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.prof-box {
+  display: flex;
+}
+
+/* SIGN UP STYLES */
+#signUp {
+  background-color: hsl(217, 28%, 15%);
+  padding: 20px;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: -9rem;
+  z-index: 9;
+}
+
+#signUp h2,
+#signUp p {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#signUpInputs {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0px;
+}
+
+#signUpInputs input {
+  padding: 10px 20px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  border-radius: 40px;
+  border: none;
+  width: 80%;
+  align-self: center;
+  font-family: Raleway;
+  font-weight: 600;
+}
+
+#emailButton {
+  background-color: hsl(198, 60%, 50%);
+  color: hsl(0, 0%, 100%);
+}
+
+/* FOOTER STYLE */
+footer {
+  background-color: hsl(216, 53%, 9%);
+  padding: 160px 30px 20px 30px;
+  overflow: hidden;
+}
+
+footer > img {
+  width: 130px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+footer > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.foots {
+  margin: 10px 0px;
+}
+
+footer ul li {
+  list-style: none;
+  margin: 10px 0px;
+}
+
+footer #foot1 i,
+footer #foot2 i {
+  margin-right: 10px;
+}
+
+#icons {
+  display: flex;
+  justify-content: center;
+}
+
+#icons i {
+  margin: 0px 10px;
+  color: hsl(0, 0%, 100%);
+}
+
+/* TABLET SCREEN */
+@media only screen and (min-width: 375px) {
+  #main-body {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 40px;
+  }
+
+  #features1 {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    padding: 50px 0px;
+  }
+
+  .inFeature1 {
+    width: 90%;
+    margin-bottom: 30px;
+  }
+
+  #features2 {
+    margin-top: 0px;
+    margin-bottom: 70px;
+    width: 90%;
+  }
+
+  #features2 > div {
+    margin: 0 auto;
+  }
+  #features2Img {
+    align-self: center;
+    width: 250px;
+    height: 300px;
+    margin-bottom: 40px;
+  }
+
+  #features2Text {
+    text-align: center;
+    width: 90%;
+  }
+}
+
+/* DESKTOP SCREEN */
+@media only screen and (min-width: 1040px) {
+  nav {
+    padding: 20px 0px;
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  nav img {
+    width: 7rem;
+    height: 20px;
+  }
+
+  nav ul li {
+    margin-left: 40px;
+    font-size: 18px;
+  }
+
+  #main-body {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 40px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  #header {
+    width: 50%;
+    align-self: center;
+  }
+
+  #header img {
+    width: 400px;
+    height: 300px;
+  }
+
+  #header h2 {
+    margin-top: 30px;
+  }
+
+  #features1 {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    padding: 50px 0px;
+  }
+
+  .inFeature1 {
+    width: 90%;
+  }
+
+  #features2Text {
+    width: 100%;
+  }
+
+  #features2 {
+    flex-direction: row;
+    margin-bottom: 70px;
+  }
+
+  #features2Img {
+    width: 500px;
+    height: 400px;
+    padding-right: 80px;
+  }
+
+  #comments {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .comment-box {
+    width: 70%;
+    margin: 0px 10px 30px 0px;
+  }
+
+  #signUp {
+    width: 70%;
+    margin-top: 80px;
+  }
+
+  #signUpInputs {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+
+  #signUpInputs input {
+    padding: 10px 5px;
+  }
+
+  footer div {
+    flex-direction: row;
+
+    justify-content: center;
+  }
+
+  .foots {
+    width: 40%;
+  }
+
+  #foot2 {
+    display: grid;
+    margin: 0px;
+  }
+}
